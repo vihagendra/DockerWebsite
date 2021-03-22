@@ -81,30 +81,105 @@
 </ul>
 <br>
 
-          <img src="https://devopedia.org/images/article/104/2558.1549907788.png" class="rounded float-end" width="450" height="350">
+<div class="container-fluid padding">
+<h2>Basic Linux Commands</h2>
+<hr>
+<ol>
+  <li><strong>pwd</strong></li>
+<p> When you first open the terminal, you are in the home directory of your user. To know which directory you are in, you can use the “pwd” command. It gives us the absolute path, which means the path that starts from the root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something like "/home/username".</p>
+<img src = "https://maker.pro/storage/zY0aprE/zY0aprEyMtOxLhiyyRKWvY3vwB9cPJJQtxubemw6.png">
+  <br>
+  <br>
 
-  <div class="container-fluid padding">
-    <div class="row padding">
-      <div class="col-lg-11">
-        <h4>Virualisation</h4>
-        <hr>
-        <h6>Definition:</h6>
-        <p>DNS stands for <b>Domain Name System</b>. It is used to associate names with IP addresses. The computer uses domain name system to look up the ip address that are there on internet.  There is no way one DNS can handle all the requests so DNS servers are connected in <b>distributed hierarchy</b> and divided into zones splitting the responsibility to handle. There are different major domains such as .com, .net, .org,etc. DNS are designed to scale no matter how much they grow.</p>
-        <h6>Example:</h6>
-        <p>Suppose if you want to visit WWW.Cyber.com then the computer ask for the address in local domain main system. If the local DNS knows the address it provides connection between the host and destination but if it doesn't know then it ask other DNS for the address if any one of them knows it provides the address to the local DNS. The local DNS also stores that address in cache for later use and provides the host with IP address.</p>
-        <h6>Uses:</h6>
-        <ul>
-          <li>It is used to convert domain name into IP address and get the address to host.</li>
-          <li>This mecahnism provides distributed and fault-tolerant service.</li>
-          <li>It also provides faster path to destination as it stores addresses in cache.</li>
+  <li><strong>ls</strong></li>
+  <p>Use the "ls" command to know what files are in the directory you are in. You can see all the hidden files by using the command “ls -a”.</p>
+  <img src="https://maker.pro/storage/NyJ4zSC/NyJ4zSCkkRu7x2IlvNeDpu9ea4Q7cWDxoB5vLJHk.png">
+  <br>
+  <br>
 
-        </ul>
+ <li><strong>cd</strong></li>
+  <p>Use the <strong>"cd"</strong> command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in <strong>“cd Downloads”.</strong> Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is. But there is a problem with these commands. Imagine you have a folder named “Raspberry Pi”. In this case, when you type in <strong>“cd Raspberry Pi”</strong>, the shell will take the second argument of the command as a different one, so you will get an error saying that the directory does not exist. Here, you can use a backward slash. That is, you can use <strong>“cd Raspberry\ Pi”</strong> in this case. Spaces are denoted like this: If you just type <strong>“cd”</strong> and press enter, it takes you to the home directory. To go back from a folder to the folder before that, you can type <strong>“cd ..”</strong> . The two dots represent back.</p>
+  <img src="https://maker.pro/storage/WAhryqs/WAhryqsvfDeEeyrO2eKIfIvca4C3hSTrSzWXmTFW.png">
+  <br>
+  <br>
 
-      </div>
-    </div>
-  </div>
+ <li><strong>mkdir & rmdir</strong></li>
+  <p>Use the <strong>mkdir</strong> command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”, then you can type <strong>“mkdir DIY”</strong>. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type <strong>“mkdir DIY\ Hacking”</strong> Use rmdir to delete a directory. But <strong>rmdir</strong> can only be used to delete an empty directory. To delete a directory containing files, use <strong>rm</strong> command.</p>
+  <img src="https://maker.pro/storage/fZHiKDk/fZHiKDkI6X950pnqyFDNLUuVvXnCGE3W2LqLjN3w.png">
+  <br>
+  <br>
+
+ <li><strong>rm</strong></li>
+  <p>Use the <strong>rm</strong> command to delete files and directories.  Use <strong>"rm -r"</strong> to delete just the directory. It deletes both the folder and the files it contains when using only the <strong>rm</strong> command.</p>
+  <img src="https://maker.pro/storage/TVtSlJ0/TVtSlJ0xCOT0TrjQCxdlznSErV7s8ip5D1uQaO29.png">
+  <br>
+  <br>
+
+   <li><strong>touch</strong></li>
+  <p> The <strong>touch</strong> command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, <strong>“touch new.txt”.</strong></p>
+  <img src="https://maker.pro/storage/xQ2pP99/xQ2pP99oGhjN1fisLfllUSp3BYFne9Gt1hdBAvMX.png">
+  <br>
+  <br>
+
+    <li><strong>man & --help</strong></li>
+  <p>To know more about a command and how to use it, use the <strong>man</strong> command. It shows the manual pages of the command. For example, <strong>“man cd”</strong> shows the manual pages of the <strong>cd</strong> command. Typing in the command name and the argument helps it show which ways the command can be used (e.g., <strong>cd –help</strong>).</p>
+  <img src="https://maker.pro/storage/Qxqv1yX/Qxqv1yXm9DdmwS11frqfVthgmSvGCBTwjf7YQ4kw.png">
+  <br>
+  <br>
+
+     <li><strong>cp</strong></li>
+  <p>Use the <strong>cp</strong> command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.</p>
+  <img src="https://maker.pro/storage/r3Jci3Z/r3Jci3ZGSACziRezSh8vmHiATZ5rFqY8CtOcM4Aj.png">
+  <br>
+  <br>
+
+  <li><strong>mv</strong></li>
+  <p>Use the <strong>mv</strong> command to move files through the command line. We can also use the <strong>mv</strong> command to rename a file. For example, if we want to rename the file <strong>“text”</strong> to <strong>“new”</strong>, we can use <strong>“mv text new”</strong>. It takes the two arguments, just like the <strong>cp</strong> command.</p>
+  <img src="https://maker.pro/storage/XfrXwxx/XfrXwxxdZUV66PCQdcFLDMkxRw58i6fLGrjjNbcV.png">
+  <br>
+  <br>
+
+  <li><strong>locate</strong></li>
+  <p>The <strong>locate</strong> command is used to locate a file in a Linux system, just like the search command in Windows. This command is useful when you don't know where a file is saved or the actual name of the file. Using the -i argument with the command helps to ignore the case (it doesn't matter if it is uppercase or lowercase). So, if you want a file that has the word “hello”, it gives the list of all the files in your Linux system containing the word "hello" when you type in <strong>“locate -i hello”</strong>. If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command <strong>“locate -i *hello*this”</strong>.</p>
+  <img src="https://maker.pro/storage/OLS3n8S/OLS3n8S30SLUxjlxdmIhd0bHnTc2q12Cy0gudkcU.png">
+  <br>
+  <br>
+</ol>
+
+
+
+
+  <h3> Tips and Tricks for using Linux Command Line: </h3>
+  <ul>
+  <li>You can use the clear command to clear the terminal if it gets filled up with too many commands.</li>
+  <li>Ctrl+C can be used to stop any command in terminal safely. If it doesn't stop with that, then Ctrl+Z can be used to force stop it.</li>
+  <li>You can exit from the terminal by using the exit command.</li>
+  <li>You can power off or reboot the computer by using the command sudo halt and sudo reboot.</li>
+  </ul>
+  <br>
+
+<h2>Steps to use docker container using linux/terminal:</h2>
+  <hr>
+<ol>
+<li>First use <strong>“docker --version”</strong> to check if you have docker installed in your computer.</li>
+<li>Use the command <strong>"docker --run hello-world"</strong> to create a container "hello world".</li>
+<li>Pull an Ubuntu image from Dockerhub using the command <strong>"Docker pull ubuntu"</strong></li>
+<li>Install apache2 using the command <strong>"apt-get install apache2"</strong></li>
+<li>Use <strong>“docker ps -a” to check the container.</strong></li>
+<li>Creating a new Docker image(use the root ID which you get earlier). Use the command <strong>Docker commit root ubuntu-my_apache2</strong>
+</li>
+<li>Check the new images using <strong>“docker images”</strong>.</li>
+<li>Share directory between Docker and host using the command <strong>"Docker run -it -p address -v location ubuntu-my_apache2 /bin/bash.</strong></li>
+</li>
+
+
+
+
 
 
 </div>
+
+
+</ol>
 </body>
 </html>

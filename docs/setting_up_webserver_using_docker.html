@@ -81,24 +81,61 @@
 </ul>
 <br>
 
-          <img src="https://devopedia.org/images/article/104/2558.1549907788.png" class="rounded float-end" width="450" height="350">
-
   <div class="container-fluid padding">
     <div class="row padding">
       <div class="col-lg-11">
-        <h4>Virualisation</h4>
+     <h2>Follow these steps to create a Web Server using Docker</h2>
         <hr>
-        <h6>Definition:</h6>
-        <p>DNS stands for <b>Domain Name System</b>. It is used to associate names with IP addresses. The computer uses domain name system to look up the ip address that are there on internet.  There is no way one DNS can handle all the requests so DNS servers are connected in <b>distributed hierarchy</b> and divided into zones splitting the responsibility to handle. There are different major domains such as .com, .net, .org,etc. DNS are designed to scale no matter how much they grow.</p>
-        <h6>Example:</h6>
-        <p>Suppose if you want to visit WWW.Cyber.com then the computer ask for the address in local domain main system. If the local DNS knows the address it provides connection between the host and destination but if it doesn't know then it ask other DNS for the address if any one of them knows it provides the address to the local DNS. The local DNS also stores that address in cache for later use and provides the host with IP address.</p>
-        <h6>Uses:</h6>
-        <ul>
-          <li>It is used to convert domain name into IP address and get the address to host.</li>
-          <li>This mecahnism provides distributed and fault-tolerant service.</li>
-          <li>It also provides faster path to destination as it stores addresses in cache.</li>
 
-        </ul>
+<ol>
+  <li>Make a directory in terminal using these commands:</li>
+  <ul>
+  <li>mkdir /test
+  <br>
+  cd /test
+  </li>
+  </ul>
+  <br>
+
+  <li>Now create a file `Dockerfile` (File name is hard coded do not change the file name)</li>
+  <ul>
+  <li> touch /test/Dockerfile
+  </li>
+  <br>
+  </ul>
+ <li>Create a sample web page with name index.html</li>
+  <ul>
+  <li>vi /test/index.html
+  </li>
+  </ul>
+<img src ="https://miro.medium.com/max/800/0*5-isAmO7M2vpo-po.jpg">
+<br>
+<li> Edit the file using following instructions </li>
+  <ul>
+  <li>vi Dockerfile <br>
+FROM centos:latest <br>
+MAINTAINER NewstarCorporation <br>
+RUN yum -y install httpd <br>
+COPY index.html /var/www/html/ <br>
+CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”] <br>
+EXPOSE 80
+  </li>
+  </ul>
+<img src ="https://miro.medium.com/max/789/0*QHqbHDjzc6YKnq9H.jpg">
+<br>
+<li> Build the image using docker build. Test is the directory where Dockerfile is present and –t option is to tag or name the image. After building Run the docker image. </li>
+<ul><li>docker run –dit –p 1234:80 webserver:v1</ul></li>
+<img src ="https://miro.medium.com/max/750/0*KT0hymQFUySPkIRq.jpg">
+<br>
+<li>To See the Result on web browser </li>
+<ul><li>Type "http://<host ip>:1234/" on your web browser. </ul></li>
+<img src ="https://miro.medium.com/max/781/0*yF6wfwBQU-tcMKtG.jpg">
+
+
+<p>To know more methods on creating web server using docker, you can refer : <a href=”https://medium.com/@vi1996ash/steps-to-build-apache-web-server-docker-image-1a2f21504a8e”>https://medium.com/@vi1996ash/steps-to-build-apache-web-server-docker-image-1a2f21504a8e</p>
+
+
+</ol>
 
       </div>
     </div>

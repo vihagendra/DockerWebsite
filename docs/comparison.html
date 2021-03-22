@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <div class="container-xl">
+      <a class="navbar-brand" href="index.html">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYuJkVlzoimJOo5nwSy3lmWfsDkqW6tB-_sA&usqp=CAU" alt="" width="30" height="24">
+      Docker Website
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07XL">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+             <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="virtualization.html">Virtualization</a></li>
+            <li><a class="dropdown-item" href="containerization.html">Containerization</a></li>
+            <li><a class="dropdown-item" href="comparison.html">Comparison</a></li>
+            <li><a class="dropdown-item" href="setting_up_webserver_using_docker.html">Setting up Webserver using Docker</a></li>
+            <li><a class="dropdown-item" href="linux_and_docker.html">Linux and Docker</a>
+            <li><a class="dropdown-item" href="docker_with_pycharm.html">Docker and Pycharm</a>
+          </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+</header>
+
+<div class="container-xl mb-4">
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="virtualization.html">Virtualization</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="containerization.html">Containerization</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="comparison.html">Comparison</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="setting_up_webserver_using_docker.html">Setting up WebServer using Docker</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="linux_and_docker.html">Linux and Docker</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="docker_with_pycharm.html">Docker and Pycharm</a>
+    </li>
+
+</ul>
+<br>
+
+          <img src="https://devopedia.org/images/article/104/2558.1549907788.png" class="rounded float-end" width="450" height="350">
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-11">
+        <h4>Virualisation</h4>
+        <hr>
+        <h6>Definition:</h6>
+        <p>DNS stands for <b>Domain Name System</b>. It is used to associate names with IP addresses. The computer uses domain name system to look up the ip address that are there on internet.  There is no way one DNS can handle all the requests so DNS servers are connected in <b>distributed hierarchy</b> and divided into zones splitting the responsibility to handle. There are different major domains such as .com, .net, .org,etc. DNS are designed to scale no matter how much they grow.</p>
+        <h6>Example:</h6>
+        <p>Suppose if you want to visit WWW.Cyber.com then the computer ask for the address in local domain main system. If the local DNS knows the address it provides connection between the host and destination but if it doesn't know then it ask other DNS for the address if any one of them knows it provides the address to the local DNS. The local DNS also stores that address in cache for later use and provides the host with IP address.</p>
+        <h6>Uses:</h6>
+        <ul>
+          <li>It is used to convert domain name into IP address and get the address to host.</li>
+          <li>This mecahnism provides distributed and fault-tolerant service.</li>
+          <li>It also provides faster path to destination as it stores addresses in cache.</li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>

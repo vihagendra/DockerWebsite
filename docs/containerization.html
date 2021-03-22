@@ -30,7 +30,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pages
           </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="virtualization.html">Virtualization</a></li>
             <li><a class="dropdown-item" href="containerization.html">Containerization</a></li>
             <li><a class="dropdown-item" href="comparison.html">Comparison</a></li>
@@ -60,10 +60,10 @@
 <div class="container-xl mb-4">
   <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link" href="virtualization.html">Virtualization</a>
+    <a class="nav-link active" href="virtualization.html">Virtualization</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="containerization.html">Containerization</a>
+    <a class="nav-link" href="containerization.html">Containerization</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="comparison.html">Comparison</a>
@@ -71,33 +71,42 @@
     <li class="nav-item">
     <a class="nav-link" href="setting_up_webserver_using_docker.html">Setting up WebServer using Docker</a>
   </li>
-   <li class="nav-item">
+ <li class="nav-item">
     <a class="nav-link" href="linux_and_docker.html">Linux and Docker</a>
   </li>
-    <li class="nav-item">
+      <li class="nav-item">
     <a class="nav-link" href="docker_with_pycharm.html">Docker and Pycharm</a>
     </li>
 
 </ul>
 <br>
 
-          <img src="https://devopedia.org/images/article/104/2558.1549907788.png" class="rounded float-end" width="450" height="350">
+          <img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj" class="rounded float-end" width="450" height="350">
+
 
   <div class="container-fluid padding">
     <div class="row padding">
       <div class="col-lg-11">
-        <h4>Virualisation</h4>
+        <h4>Containerization</h4>
         <hr>
-        <h6>Definition:</h6>
-        <p>DNS stands for <b>Domain Name System</b>. It is used to associate names with IP addresses. The computer uses domain name system to look up the ip address that are there on internet.  There is no way one DNS can handle all the requests so DNS servers are connected in <b>distributed hierarchy</b> and divided into zones splitting the responsibility to handle. There are different major domains such as .com, .net, .org,etc. DNS are designed to scale no matter how much they grow.</p>
-        <h6>Example:</h6>
-        <p>Suppose if you want to visit WWW.Cyber.com then the computer ask for the address in local domain main system. If the local DNS knows the address it provides connection between the host and destination but if it doesn't know then it ask other DNS for the address if any one of them knows it provides the address to the local DNS. The local DNS also stores that address in cache for later use and provides the host with IP address.</p>
-        <h6>Uses:</h6>
-        <ul>
-          <li>It is used to convert domain name into IP address and get the address to host.</li>
-          <li>This mecahnism provides distributed and fault-tolerant service.</li>
-          <li>It also provides faster path to destination as it stores addresses in cache.</li>
+        <h6>What is Containerization?</h6>
+        <p>Virtualization uses software to create an abstraction layer over computer hardware that allows the hardware elements of a single computer—processors, memory, storage and more—to be divided into multiple virtual computers, commonly called virtual machines (VMs). Each VM runs its own operating system (OS) and behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware.
 
+It follows that virtualization enables more efficient utilization of physical computer hardware and allows a greater return on an organization’s hardware investment.
+
+Today, virtualization is a standard practice in enterprise IT architecture. It is also the technology that drives cloud computing economics. Virtualization enables cloud providers to serve users with their existing physical computer hardware; it enables cloud users to purchase only the computing resources they need when they need it, and to scale those resources cost-effectively as their workloads grow.</p>
+        <p>To learn and understand more better you can watch the below video.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0qotVMX-J5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <h6>Benefits of containerization</h6>
+
+        <p>Containerization offers significant benefits to developers and development teams as follows:</p>
+        <ul>
+            <li>Portability: A container creates an executable package of software that is abstracted away from the host operating system, and hence, is portable and able to run uniformly and consistently across any platform or cloud. </li>
+            <li>Agility: The open source Docker Engine for running containers started the industry standard for containers with simple developer tools and a universal packaging approach that works on both Linux and Windows operating systems. The container ecosystem has shifted to engines managed by the Open Container Initiative (OCI). Software developers can continue using agile or DevOps tools and processes for rapid application development and enhancement.</li>
+            <li>Speed: Containers are often referred to as “lightweight,” meaning they share the machine’s operating system (OS) kernel and are not bogged down with this extra overhead. Not only does this drive higher server efficiencies, it also reduces server and licensing costs while speeding up start-times as there is no operating system to boot.</li>
+            <li>Efficiency: Software running in containerized environments shares the machine’s OS kernel, and application layers within a container can be shared across containers. Thus, containers are inherently smaller in capacity than a VM and require less start-up time, allowing far more containers to run on the same compute capacity as a single VM. This drives higher server efficiencies, reducing server and licensing costs.</li>
+            <li>Security: The isolation of applications as containers inherently prevents the invasion of malicious code from affecting other containers or the host system. Additionally, security permissions can be defined to automatically block unwanted components from entering containers or limit communications with unnecessary resources.</li>
         </ul>
 
       </div>

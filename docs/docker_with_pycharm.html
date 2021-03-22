@@ -80,30 +80,33 @@
 
 </ul>
 <br>
+<h2>Docker configuration for Pycharm</h2>
+<ol>
+<li>Install Pycharm Pro,GIT and Docker. Open pycharm pro and Docker should be running in the background.</li>
+<li>In pycharm go to settings --> Build, Execution and Deployment in there select “docker”.</li>
+<li>Use the following configuration for Docker Pycharm Integration:</li>
+<ul>Docker Toolbox: Windows Non-Pro</ul>
+<ul>Docker Native: Windows Pro</ul>
+<ul>Docker Mac: Mac</ul>
+<li>From Docker settings copy expose daemon link in TCP socket.Then click 'ok'</li>
+<li>Add configuration in pycharm project select docker file.</li>
+<ul>Type the name</ul>
+<ul>Select dockerfile</ul>
+<ul>Type the image name</ul>
+<ul>Check whether the run built image is ticked.</ul>
+<ul>Click apply and ok.</ul>
+<li>Add interpreter select docker it registers itself and click ok. </li>
+</ol>
+<h2>Dockerizing your python application:</h2>
+<ul>
+  <li>Create Dockerfile<li>
+<img src="images/dockerfile.png" alt="docker file">
+<li>Create python file<li>
+<img src="images/pythonfile.png" alt="python file">
+<li> Run the docker file and you will get the output.</li>
+<img src="https://github.com/Harshad3212/Docker_project_with_pycharm/blob/main/Docker_project_with_pycharm.png?raw=true" alt ="output" width="600" height="300">
 
-          <img src="https://devopedia.org/images/article/104/2558.1549907788.png" class="rounded float-end" width="450" height="350">
-
-  <div class="container-fluid padding">
-    <div class="row padding">
-      <div class="col-lg-11">
-        <h4>Virualisation</h4>
-        <hr>
-        <h6>Definition:</h6>
-        <p>DNS stands for <b>Domain Name System</b>. It is used to associate names with IP addresses. The computer uses domain name system to look up the ip address that are there on internet.  There is no way one DNS can handle all the requests so DNS servers are connected in <b>distributed hierarchy</b> and divided into zones splitting the responsibility to handle. There are different major domains such as .com, .net, .org,etc. DNS are designed to scale no matter how much they grow.</p>
-        <h6>Example:</h6>
-        <p>Suppose if you want to visit WWW.Cyber.com then the computer ask for the address in local domain main system. If the local DNS knows the address it provides connection between the host and destination but if it doesn't know then it ask other DNS for the address if any one of them knows it provides the address to the local DNS. The local DNS also stores that address in cache for later use and provides the host with IP address.</p>
-        <h6>Uses:</h6>
-        <ul>
-          <li>It is used to convert domain name into IP address and get the address to host.</li>
-          <li>This mecahnism provides distributed and fault-tolerant service.</li>
-          <li>It also provides faster path to destination as it stores addresses in cache.</li>
-
-        </ul>
-
-      </div>
-    </div>
-  </div>
-
+</ul>
 
 </div>
 </body>
